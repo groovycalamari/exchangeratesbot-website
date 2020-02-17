@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+}
+task copyStaticWebsite(type: Copy) {
+    from 'src/main/resources/public'
+    into 'build/dist'
+}
+build.dependsOn('copyStaticWebsite')
+
