@@ -20,7 +20,7 @@
         }
         .button {
             background-color: #00385F;
-            width: 260px;
+            width: 360px;
             margin: 0 auto;
             border-radius: 25px;
             padding: 10px;
@@ -30,31 +30,34 @@
             float: left;
             margin-right: 15px;
         }
-        figure {
+        video {
             max-width: 99%;
             text-align: center;
             margin: 20px auto;
         }
         @media screen and (min-width: 780px) {
-            figure {
+            video {
                 max-width: 800px;
             }
         }
-        figure img {
-            width: 100%;
-        }
+
         .button a {
             color: white;
             text-decoration: none;
-            font-size: 28px;
-            line-height: 28px;
+            font-size: 25px;
+            line-height: 25px;
         }
     </style>
 </head>
 <body>
 <article>
-    <div class="button"><a title="Open @ForeignExchangeRatesBot in Telegram" href="https://t.me/ForeignExchangeRatesBot"><img src="/images/telegram.svg" height="30" alt="Telegram logo">Open in Telegram</a></div>
-    <figure><img src="/images/foreign_exchange_rates_bot.gif" alt="Foreign Exchange Rates Telegram Bot"/></figure>
+    <div class="button"><a title="Open @ForeignExchangeRatesBot in Telegram" href="https://t.me/ForeignExchangeRatesBot"><img src="/images/telegram.svg" height="30" alt="Telegram logo">@ForeignExchangeRatesBot</a></div>
+
+    <video controls>
+        <source src="/video/foreign_exchange_rates_bot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <p>This is a telegram bot which consumes <a href="https://exchangeratesapi.io">Exchange Rates API</a></p></article>
 </body>
 </html>
